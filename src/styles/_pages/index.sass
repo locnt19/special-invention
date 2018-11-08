@@ -1,0 +1,99 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.home-banner
+	.owl-carousel
+		.item
+			.title
+				padding: 0.1rem
+				width: 100%
+				text-align: center
+				+fz(1.5rem)
+		.owl-nav
+			margin-top: 0
+			i
+				padding: 0.5rem 1rem
+				display: inline-block
+		+media-breakpoint-up(md)
+			.item
+				position: relative
+				.title
+					color: #ffffff
+					+fz(2rem)
+					+pos(abs, null null 0 null)
+					+background-horizontal(rgba(255, 250, 250, 0.5) 0%, rgba(0, 0, 0, 1) 100%)
+					padding-bottom: 4rem
+			.owl-dots
+				margin-top: 0
+				+pos(abs, null null 1rem null)
+				width: 100%
+				.owl-dot
+					span
+						+bor-rad(0px)
+						background: none
+						border: 1px solid $warning
+					&.active
+						span
+							background: $warning
+.home-services
+	background-image: url('../img/trangchu/trangchu_services_bg.png')
+	background-size: cover
+	background-attachment: fixed
+	padding: 4rem 0
+	h2
+		text-transform: uppercase
+		text-align: center
+		color: #ffffff
+		span
+			margin: 0 auto
+			+duong-ke-duoi() //- viet o file mixin
+	.item
+		margin-bottom: 1rem
+		figure
+			background: rgba(255,255,255,.5)
+			height: 100%
+			padding: 2rem
+			display: flex
+			align-items: center
+			justify-content: center
+			img
+				max-width: 100%
+.home-promotion
+	margin-top: 2rem
+	position: relative
+	img
+		width: 100%
+	.box
+		h2
+			+fz(1.5rem)
+			text-transform: uppercase
+			span
+				+duong-ke-duoi()
+		input
+			margin-top: 1rem
+			padding: 0.5rem 2rem
+			background-color: $warning
+			border: 1px solid $warning
+	+media-breakpoint-up(sm)
+		.box
+			+pos(abs, 3rem null null 3rem)
+			color: #fff 
+			h2
+				+fz(1.5rem)
+			.title
+				margin-top: 1rem
+				width: 45%
+			input
+				color: #fff 
+	+media-breakpoint-up(md)
+		.box
+			+pos(abs, 3rem null null 5rem)
+			color: #fff 
+			h2
+				+fz(2rem)
+			.title
+				+fz(1.2rem)
+				margin-top: 1rem
+				width: 45%
+			input
+				color: #fff 

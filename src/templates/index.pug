@@ -1,0 +1,47 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home-banner
+		.owl-carousel.owl-theme
+			.item
+				img(src="../img/trangchu/trangchu_banner_img_01.png", alt="", srcset="")
+				.title Trải nghiệm vượt trội cùng Tutto
+			.item
+				img(src="../img/trangchu/trangchu_banner_img_02.png", alt="", srcset="")
+			.item
+				img(src="../img/trangchu/trangchu_banner_img_03.png", alt="", srcset="")
+				.title Tự tin làm chủ tay lái trên mọi chặn đường
+			.item
+				img(src="../img/trangchu/trangchu_banner_img_04.png", alt="", srcset="")
+				.title Trải nghiệm vượt trội cùng Tutto
+	section.home-services
+		.container
+			.row
+				.col
+					h2 sản phẩm nổi bật
+						span
+			.row
+				.col-sm-4.item
+					figure
+						img(src="../img/services_img_01.png", alt="", srcset="")
+				.col-sm-4.item
+					figure
+						img(src="../img/services_img_02.png", alt="", srcset="")
+				.col-sm-4.item
+					figure
+						img(src="../img/services_img_03.png", alt="", srcset="")
+	section.home-promotion.container
+		img(src="../img/trangchu/trangchu_about_bg.png", alt="", srcset="")
+		.box
+			h2 chương trình khuyến mãi
+				span
+			.title Cùng với nhiều chiết khấu và ưu dãi hấp dẫn, Tutto luôn sẵn sàng đồng hành cùng bạn trên mọi chặng đường.
+			input.btn.btn-warning(type="button" value="Xem thêm")
