@@ -1,5 +1,5 @@
 <!-- ////////////// HEADER ////////////// -->
-header.bg-light
+header
 	.container
 		nav.navbar.navbar-expand-lg.navbar-light
 			a.navbar-brand(href="#") 
@@ -8,21 +8,29 @@ header.bg-light
 			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
 				span.fa.fa-bars
 			#fullStackMenu.collapse.navbar-collapse
-				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
-				.mr-auto
+				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải
 				ul.navbar-nav
 					li.nav-item.active
 						a.nav-link(href="index.html")
 							| Trang chủ
-					li.nav-item.dropdown
-						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Gian hàng
-						.dropdown-menu(aria-labelledby="dropdownFS")
-							a.dropdown-item(href="#") Nam
-							a.dropdown-item(href="#") Nữ
 					li.nav-item
-						a.nav-link(href="services.html") Dịch vụ
+						a.nav-link(href="#") Giới thiệu
 					li.nav-item
-						a.nav-link(href="about.html") Về chúng tôi
+						a.nav-link(href="about.html") Sản phẩm
+					li.nav-item
+						a.nav-link(href="contact.html") Chương trình khuyến mãi
+					li.nav-item
+						a.nav-link(href="#") Tin tức
+					li.nav-item
+						a.nav-link(href="about.html") Tuyển dụng
 					li.nav-item
 						a.nav-link(href="contact.html") Liên hệ
+				form.form-inline.my-2.my-lg-0
+					span |
+					img(src="../img/header_img_01.png", alt="")
+					img(src="../img/header_img_02.png", alt="")
+					span |
+					button
+						i.fa.fa-search
+
 <!-- ////////////// HEADER ////////////// -->

@@ -47,6 +47,7 @@
 		span
 			margin: 0 auto
 			+duong-ke-duoi() //- viet o file mixin
+			margin-bottom: 2rem
 	.item
 		margin-bottom: 1rem
 		figure
@@ -65,35 +66,119 @@
 		width: 100%
 	.box
 		h2
-			+fz(1.5rem)
+			padding-top: 0.5rem
+			+fz(1.2rem)
 			text-transform: uppercase
 			span
 				+duong-ke-duoi()
 		input
-			margin-top: 1rem
-			padding: 0.5rem 2rem
+			margin-top: 0.5rem
+			padding: 0.1rem 0.5rem
 			background-color: $warning
 			border: 1px solid $warning
+			border-radius: 0
 	+media-breakpoint-up(sm)
 		.box
-			+pos(abs, 3rem null null 3rem)
+			+pos(abs, 0.7rem null null 3rem)
 			color: #fff 
 			h2
-				+fz(1.5rem)
+				padding: 0
+				+fz(1.2rem)
 			.title
-				margin-top: 1rem
-				width: 45%
+				width: 50%
 			input
+				padding: 0.2rem 1rem
 				color: #fff 
 	+media-breakpoint-up(md)
 		.box
-			+pos(abs, 3rem null null 5rem)
+			+pos(abs, 2rem null null 3rem)
 			color: #fff 
 			h2
+				padding: 0
+				+fz(1.5rem)
+			.title
+				+fz(1.1rem)
+				width: 50%
+			input
+				padding: 0.2rem 1rem
+				color: #fff 
+	+media-breakpoint-up(lg)
+		.box
+			+pos(abs, 4rem null null 5rem)
+			color: #fff 
+			h2
+				padding: 0
 				+fz(2rem)
 			.title
-				+fz(1.2rem)
+				+fz(1.5rem)
 				margin-top: 1rem
 				width: 45%
+				letter-spacing: 1px
 			input
+				padding: 0.5rem 2rem
 				color: #fff 
+
+.home-about
+	.banhxe
+		display: none
+		max-width: 80px
+		background: url('../img/trangchu/trangchu_banhxe.png') no-repeat center top
+		background-size: cover
+	+media-breakpoint-up(md)
+		.banhxe
+			display: flex
+	figure
+		img
+			width: 100%
+		figcaption
+			h2
+				+fz(1.5rem)
+				text-transform: uppercase
+			span
+				+duong-ke-duoi()
+	+media-breakpoint-up(md)
+		figure
+			text-align: right
+			position: relative
+			img
+				width: initial
+			figcaption
+				+pos(abs,50% null null 0)
+				+pad(6rem 5rem 6rem 0)
+				background: #fff 
+				width: 50%
+				transform: translateY(-50%)
+				text-align: left
+				.icon
+					+pos(abs, 50% 3rem null null)
+					transform: translateY(-50%)
+					+fz(2rem)
+					color: $warning
+.home-news
+	margin-top: 3rem
+	padding: 3rem
+	background: url('../img/trangchu/trangchu_news_bg.png') no-repeat center center
+	background-size: cover
+	h2
+		text-transform: uppercase
+		text-align: center
+		span
+			+duong-ke-duoi()
+			margin: 0 auto
+			margin-bottom: 2rem
+	img
+		width: 100%
+	+media-breakpoint-up(md)
+		figure
+			position: relative
+			figcaption
+				+pos(abs, null null 1rem 1rem)
+				color: #fff 
+	.title
+		text-align: right
+		padding: 1rem
+		background: #fff 
+		p,h5
+			text-align: left
+		a
+			color: $warning
