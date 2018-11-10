@@ -12,15 +12,15 @@ block body
 	section.home-banner
 		.owl-carousel.owl-theme
 			.item
-				img(src="../img/trangchu/trangchu_banner_img_01.png", alt="", srcset="")
+				img(src="img/trangchu/trangchu_banner_img_01.png", alt="", srcset="")
 				.title Trải nghiệm vượt trội cùng Tutto
 			.item
-				img(src="../img/trangchu/trangchu_banner_img_02.png", alt="", srcset="")
+				img(src="img/trangchu/trangchu_banner_img_02.png", alt="", srcset="")
 			.item
-				img(src="../img/trangchu/trangchu_banner_img_03.png", alt="", srcset="")
+				img(src="img/trangchu/trangchu_banner_img_03.png", alt="", srcset="")
 				.title Tự tin làm chủ tay lái trên mọi chặn đường
 			.item
-				img(src="../img/trangchu/trangchu_banner_img_04.png", alt="", srcset="")
+				img(src="img/trangchu/trangchu_banner_img_04.png", alt="", srcset="")
 				.title Trải nghiệm vượt trội cùng Tutto
 	section.home-services
 		.container
@@ -31,13 +31,13 @@ block body
 			.row
 				.col-sm-4.item
 					figure
-						img(src="../img/services_img_01.png", alt="", srcset="")
+						img(src="img/services_img_01.png", alt="", srcset="")
 				.col-sm-4.item
 					figure
-						img(src="../img/services_img_02.png", alt="", srcset="")
+						img(src="img/services_img_02.png", alt="", srcset="")
 				.col-sm-4.item
 					figure
-						img(src="../img/services_img_03.png", alt="", srcset="")
+						img(src="img/services_img_03.png", alt="", srcset="")
 	section.home-about
 		.container
 			.row
@@ -46,7 +46,7 @@ block body
 					.row.pt-5
 						.col
 							figure
-								img(src="../img/trangchu/trangchu_news_img_01.png", alt="")
+								img(src="img/trangchu/trangchu_news_img_01.png", alt="")
 								figcaption
 									h2 giới thiệu
 										span
@@ -56,20 +56,42 @@ block body
 					.row
 						.col
 							figure
-								img(src="../img/trangchu/trangchu_news_img_02.png", alt="")
+								img(src="img/trangchu/trangchu_news_img_02.png", alt="")
 								figcaption
 									h2 tìm lốp xe phù hợp
 										span
-									.title Tutto Việt Nam tự hào là nhà phân phối vỏ - ruột xe cao cấp cho hàng ngàn chiếc xe trong thập kỷ qua. Với hơn 10 năm hoạt động phân phối vỏ ruột xe, Tutto hiểu rõ những gì tốt nhất cho chiếc xe của bạn. Từ những mong muốn của bạn, đội ngũ Tutto cam kết một dịch vụ trọn gói tốt nhất từ A đến Z.
+									.form-group
+										select.form-control
+											option Chọn loại
+											option 1
+											option 2
+											option 3
+											option 4
+											option 5
+										select.form-control
+											option Chọn mẫu xe
+											option 1
+											option 2
+											option 3
+											option 4
+											option 5
+										select.form-control
+											option Chọn kích thước
+											option 1
+											option 2
+											option 3
+											option 4
+											option 5
+										button Tìm kiếm
 									.icon
 										i.fa.fa-arrow-right
 	section.home-promotion.container
-		img(src="../img/trangchu/trangchu_about_bg.png", alt="", srcset="")
+		img(src="img/trangchu/trangchu_about_bg.png", alt="", srcset="")
 		.box
 			h2 chương trình khuyến mãi
 				span
 			.title Cùng với nhiều chiết khấu và ưu dãi hấp dẫn, Tutto luôn sẵn sàng đồng hành cùng bạn trên mọi chặng đường.
-			input(type="button" value="Xem thêm")
+			button Xem thêm
 	section.home-news
 		.container
 			.row
@@ -79,22 +101,20 @@ block body
 			.row
 				.col-12.col-md-6
 					figure
-						img(src="../img/trangchu/trangchu_news_img_03.png", alt="")
+						img(src="img/trangchu/trangchu_news_img_03.png", alt="")
 						figcaption
 							h5 Những tính năng của hoa lốp xe ô tô
 				.col-12.col-md-6
-					.row.no-gutters.align-items-center
-						.col-12.col-md-6.order-xs-1.order-lg-1
-							img(src="../img/trangchu/trangchu_news_img_04.png", alt="")
-						.col-12.col-md-6.order-xs-2.order-lg-2
-							.title
-								h5 Dấu hiệu nhận biết cần thay lốp xe máy ngay lập tức
-								p Trong quá trình sử dụng, khi nhận thấy một số biểu hiện bất thường dưới đây, bạn cần phải thay lốp xe ngay
-								a(href="#") Xem thêm
-						.col-12.col-md-6.order-xs-4.order-lg-3
-							.title
-								h5 Turanza T005 - Lốp xe đặc biệt, êm và an toàn ngay cả khi lái xe dưới mưa
-								p Bridgestone Việt Nam, tập đoàn Bridgestone, tập đoàn sản xuất lốp cao su lớn nhất thế giới
-								a(href="#") Xem thêm
-						.col-12.col-md-6.order-xs-3.order-lg-4
-							img(src="../img/trangchu/trangchu_news_img_05.png", alt="")
+					.row.no-gutters
+						.col-12.col-md-6.order-1.order-md-1
+							img(src="img/trangchu/trangchu_news_img_04.png", alt="")
+						.col-12.col-md-6.order-2.order-md-2.title
+							h5 Dấu hiệu nhận biết cần thay lốp xe máy ngay lập tức
+							p "Trong quá trình sử dụng, khi nhận thấy một số biểu hiện bất thường dưới đây, bạn cần phải thay lốp xe ngay"
+							a(href="#") Xem thêm
+						.col-12.col-md-6.order-4.order-md-3.title
+							h5 Turanza T005 - Lốp xe đặc biệt, êm và an toàn
+							p "Bridgestone Việt Nam, tập đoàn Bridgestone, tập đoàn sản xuất lốp cao su lớn nhất thế giới"
+							a(href="#") Xem thêm
+						.col-12.col-md-6.order-3.order-md-4
+							img(src="img/trangchu/trangchu_news_img_05.png", alt="")

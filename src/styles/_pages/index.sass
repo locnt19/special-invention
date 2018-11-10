@@ -45,9 +45,7 @@
 		text-align: center
 		color: #ffffff
 		span
-			margin: 0 auto
 			+duong-ke-duoi() //- viet o file mixin
-			margin-bottom: 2rem
 	.item
 		margin-bottom: 1rem
 		figure
@@ -65,58 +63,43 @@
 	img
 		width: 100%
 	.box
+		color: #fff 
 		h2
 			padding-top: 0.5rem
 			+fz(1.2rem)
 			text-transform: uppercase
 			span
 				+duong-ke-duoi()
-		input
+				margin-left: 0
+		button
 			margin-top: 0.5rem
-			padding: 0.1rem 0.5rem
-			background-color: $warning
-			border: 1px solid $warning
-			border-radius: 0
+			+btn(0.1rem, 0.5rem)
 	+media-breakpoint-up(sm)
 		.box
 			+pos(abs, 0.7rem null null 3rem)
-			color: #fff 
 			h2
 				padding: 0
-				+fz(1.2rem)
 			.title
 				width: 50%
-			input
-				padding: 0.2rem 1rem
-				color: #fff 
+			button
+				+btn(0.2rem, 1rem)
 	+media-breakpoint-up(md)
 		.box
 			+pos(abs, 2rem null null 3rem)
-			color: #fff 
 			h2
-				padding: 0
 				+fz(1.5rem)
 			.title
 				+fz(1.1rem)
-				width: 50%
-			input
-				padding: 0.2rem 1rem
-				color: #fff 
 	+media-breakpoint-up(lg)
 		.box
 			+pos(abs, 4rem null null 5rem)
-			color: #fff 
 			h2
-				padding: 0
 				+fz(2rem)
 			.title
 				+fz(1.5rem)
 				margin-top: 1rem
-				width: 45%
-				letter-spacing: 1px
-			input
-				padding: 0.5rem 2rem
-				color: #fff 
+			button
+				+btn()
 
 .home-about
 	.banhxe
@@ -124,19 +107,25 @@
 		max-width: 80px
 		background: url('../img/trangchu/trangchu_banhxe.png') no-repeat center top
 		background-size: cover
-	+media-breakpoint-up(md)
-		.banhxe
-			display: flex
 	figure
 		img
 			width: 100%
 		figcaption
 			h2
+				padding-top: 1.5rem
 				+fz(1.5rem)
 				text-transform: uppercase
 			span
-				+duong-ke-duoi()
+				+duong-ke-duoi(20%)
+				margin-left: 0
+			select
+				margin: 1rem 0
+				width: 80%
+			button
+				+btn()
 	+media-breakpoint-up(md)
+		.banhxe
+			display: flex
 		figure
 			text-align: right
 			position: relative
@@ -144,11 +133,13 @@
 				width: initial
 			figcaption
 				+pos(abs,50% null null 0)
-				+pad(6rem 5rem 6rem 0)
+				+pad(4rem 5rem 4rem 1rem)
 				background: #fff 
 				width: 50%
 				transform: translateY(-50%)
 				text-align: left
+				.title
+					width: 90%
 				.icon
 					+pos(abs, 50% 3rem null null)
 					transform: translateY(-50%)

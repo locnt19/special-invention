@@ -1,11 +1,11 @@
 // Các Mixin viết vào đây
-=duong-ke-duoi()
+=duong-ke-duoi($width: 10%, $tren: 0.5rem, $phai: auto, $duoi: 1rem, $trai: auto)
 	position: relative
 	height: 3px
 	background: $warning
-	width: 10%
+	width: $width
 	display: block
-	margin-top: 0.5rem
+	margin: $tren $phai $duoi $trai
 	&:before,
 	&:after
 		display: block
@@ -24,3 +24,9 @@
 		border-right: 3px solid transparent
 		position: absolute
 		right: -3px
+=btn($trenduoi: 0.5rem, $traiphai: 2rem)
+	border-radius: 0
+	background: $warning
+	border: 1px solid $warning
+	padding: $trenduoi $traiphai
+	color: #fff
